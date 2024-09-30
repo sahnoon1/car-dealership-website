@@ -1,0 +1,242 @@
+/* General Styles - Applied to all pages */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section (Home Page - index.html) */
+.hero {
+    background-color: #2d2d2d;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.hero a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero p {
+    margin: 10px 0;
+    margin-bottom: 10px;
+}
+
+.hero button {
+    background-color: #e8491d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #d0381b;
+}
+
+/* Features Section (Home Page - index.html) */
+.features {
+    padding: 20px;
+    margin: 100px auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #ccc;
+    text-align: center;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.features div {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.features img{
+    max-width: 50%;
+    margin-bottom: 10%;
+}
+
+/* Models Section (models.html) */
+.models {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #ccc;
+    margin-bottom: 10%;
+}
+
+.models h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.models img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+/* About Us Page (about.html) */
+.about {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+.about h2 {
+    text-align: center;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about img {
+    max-width: 30%;
+    margin-bottom: 100px;
+}
+/* Contact Section (contact.html) */
+section {
+    padding: 20px;
+    margin: 100px auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #ccc;
+    max-width: 80%;
+}
+
+section h2 {
+    text-align: center;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Reservation Form (reservation.html) */
+form {
+    padding: 20px;
+    margin: 100px auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #ccc;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 40%
+    
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input[type="text"], form input[type="date"], form input[type="file"], form select {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="radio"], form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+form button {
+    background-color: #e8491d;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #d0381b;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .features div {
+        flex-direction: column;
+    }
+
+    .models img, section img {
+        width: 100%;
+    }
+}

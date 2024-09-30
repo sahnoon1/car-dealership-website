@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Book a Test Drive</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="models.html">Car Models</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form id="reservationForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your phone number" required><br>
+
+        <label for="car-model">Car Model:</label>
+        <select id="car-model" name="car-model">
+            <option value="luxury-sedan">Luxury Sedan</option>
+            <option value="family-suv">Family SUV</option>
+            <option value="sport-coupe">Sport Coupe</option>
+        </select><br>
+
+        <label>Preferred Date:</label>
+        <input type="date" id="test-date" name="test-date" required><br>
+
+        <label>Extras:</label><br>
+        <input type="checkbox" id="gps" name="extras" value="GPS">
+        <label for="gps">GPS</label><br>
+        <input type="checkbox" id="sunroof" name="extras" value="Sunroof">
+        <label for="sunroof">Sunroof</label><br>
+
+        <label for="file-upload">Upload Your ID:</label>
+        <input type="file" id="file-upload" name="file-upload" accept="image/*"><br>
+
+        <label>Are you a returning customer?</label><br>
+        <input type="radio" id="yes" name="returning" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="returning" value="no">
+        <label for="no">No</label><br>
+
+        <input type="submit" value="Submit Reservation">
+    </form>
+
+    <footer>
+        <p>&copy; 2024 Elite Cars Dealership. All rights reserved.</p>
+    </footer>
+</body>
+</html>
